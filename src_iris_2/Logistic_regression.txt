@@ -1,0 +1,23 @@
+建立 Logistic regression 模型
+邏輯迴歸是由線性回歸變化而來的，屬判別模型適合解決二元分類問題。
+
+Parameters:
+
+penalty: 正規化l1/l2，防止模型過度擬合。
+C: 數值越大對 weight 的控制力越弱，預設為1。
+n_init: 預設為10次隨機初始化，選擇效果最好的一種來作為模型。
+solver: 優化器的選擇。newton-cg,lbfgs,liblinear,sag,saga。預設為liblinear。
+multi_class: 選擇分類方式，ovr就是one-vs-rest(OvR)，而multinomial就是many-vs-many(MvM)。預設為 auto，故模型訓練中會取一個最好的結果。
+max_iter: 迭代次數，預設為100代。
+class_weight: 若遇資料不平衡問題可以設定balance，預設=None。
+random_state: 亂數種子僅在solver=sag/liblinear時有用。
+Attributes:
+
+coef_: 取得斜率。
+intercept_: 取得截距。
+Methods:
+
+fit: 放入X、y進行模型擬合。
+predict: 預測並回傳預測類別。
+predict_proba: 預測每個類別的機率值。
+score: 預測成功的比例。

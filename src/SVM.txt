@@ -1,0 +1,15 @@
+https://github.com/andy6804tw/2021-13th-ironman/blob/main/11.SVM/11.2.SVR(Regression).ipynb
+
+支持向量迴歸（Support Vector Regression, SVR） 模型
+支持向量機（SVM）是專門處理分類的問題，還有另一個名詞稱為支持向量迴歸（Support Vector Regression, SVR）專門處理迴歸問題。 SVR是SVM的延伸，而支持向量迴歸只要f(x)與y偏離程度不要太大，既可以認為預測正確。
+
+三種不同SVR迴歸器:
+
+kernel='linear' (線性)
+kernel='poly' (非線性)
+kernel='rbf' (非線性)
+Methods:
+
+fit: 放入X、y進行模型擬合。
+predict: 預測並回傳預測類別。
+score: 預測成功的比例。

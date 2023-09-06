@@ -1,0 +1,17 @@
+https://github.com/andy6804tw/2021-13th-ironman/blob/main/11.SVM/11.1.SVM(Classification-iris).ipynb
+
+支持向量機 (Support Vector Machine, SVM) 模型
+SVM 能夠透過 C 來達到 weight regularization 來限制模型的複雜度。除了這點我們還能透過 SVM 的 Kernel trick 的方式將資料做非線性轉換，常見的 kernel 除了 linear 線性以外還有兩了非線性的 Polynomial 高次方轉換以及 Radial Basis Function 高斯轉換。
+
+四種不同SVC分類器:
+
+LinearSVC (線性)
+kernel='linear' (線性)
+kernel='poly' (非線性)
+kernel='rbf' (非線性)
+Methods:
+
+fit: 放入X、y進行模型擬合。
+predict: 預測並回傳預測類別。
+score: 預測成功的比例。
+predict_proba: 預測每個類別的機率值。
